@@ -1,0 +1,85 @@
+
+<div class="introcont" style="background-color: {{bgcolor}};" ng-init="fetchstory()">
+
+
+<div class="menubars">
+    <img src="img/menubarswhite.png" class="bars">
+</div>
+
+
+<br><br><br><br>
+
+<div class="bus">
+  <!--<img src="img/pixel.png">-->
+  <img src="avatar.png">
+</div>
+
+<br><br>
+
+<div>
+    <p class="yellowhead">{{chat}}</p>
+</div>
+
+    <button class="more" ng-click="nextChat()">more</button>
+
+<br>
+
+
+
+
+
+</div> <!--introcont-->
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    $(".bus").fadeIn(1000,repeat);
+
+
+
+     $(".menubars").click(function(){
+//     	$(".bars").attr("src","img/menubarsalt.png", menufade());
+         menufade();
+     });
+
+      $(".x").click(function(){
+     	$(".menu").fadeOut(1000);
+     });
+
+
+<!---->
+
+     function updown () {
+        $(".bus").animate({top: '10px'},400,
+            function() {
+         $(".bus").animate({top: '0px'},400);
+       }  
+         )
+      };
+
+      function repeat (){
+        setInterval(updown,850)
+      };
+
+     //  function down () {
+     //   $(".bus").animate({bottom: '20px'},400);
+     // }  
+
+
+
+      function menufade (){
+      	 $(".menu").fadeIn(1000);
+      };
+
+
+
+
+
+
+
+</script>

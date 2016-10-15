@@ -1,0 +1,45 @@
+
+<div class="admin" ng-show = "permission"  >
+
+<br>
+
+          <div class="newStory">
+              <input type="text" ng-model="chatter1">
+              <input type="text" ng-model="chatter2">
+              <input type="text" ng-model="chatter3">
+
+              <button ng-click="newStory(chatter1,chatter2,chatter3)">Add New story</button>
+
+          </div>
+
+<br>
+
+          <div class="newChatter">
+              
+              <input type="text" ng-model="chatter">
+             
+              <button ng-click="addChatter(chatter)">Add Chatter</button>
+
+          </div>
+
+
+<br>
+
+
+        <div class="upload">
+          
+               <!-- {{file}} -->
+          <button ngf-select="upload($file)" style="color:white; background-color:#d9d6d7;"> Upload / change display picture</button>
+
+        </div>
+
+
+
+
+
+</div> <!--end of admin--> 
+
+
+
+
+

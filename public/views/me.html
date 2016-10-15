@@ -1,0 +1,56 @@
+
+<div class="me">
+
+
+<div class="menubars">
+    <img src="img/menubars.png" class="bars">  
+</div>
+
+<br><br><br><br><br>
+
+<div>
+    <p class="yellowhead">Hello!</p>    
+</div>
+
+<br>
+
+<div class="aboutme">
+ <p> I’m Tobi Alagbe a passionate Interactive developer & Visual Designer with several years of experience, I like to create digital interactive products for the web and mobile platforms. I'm fascinated by how digital tools and products can have an effect on interactive communication. I’m based in Lagos, Nigeria. you can follow me on instagram <a href="https://instagram.com/tobialagbe" style="color:#b89873;" > @tobialagbe </a> and also on twitter <a href="https://twitter.com/tobialagbe" style="color:#6198a6;" > @tobialagbe </a>. </p>
+  
+</div>
+
+<br>
+
+</div> <!--me-->
+
+
+
+
+
+
+
+<script type="text/javascript">
+	 $(".aboutme").fadeIn(6000);
+
+     $(".yellowhead").fadeIn(5000);
+
+     $(".menubars").click(function(){
+     	$(".bars").attr("src","img/menubarsalt.png", menufade());
+     	
+     });
+
+      $(".x").click(function(){
+     	$(".menu").fadeOut(1000,switchorange());
+     });
+
+      function menufade (){
+      	 $(".menu").fadeIn(1000);
+      };
+
+       function switchorange (){
+      	 $(".bars").attr("src","img/menubars.png");
+      };
+
+
+
+</script>

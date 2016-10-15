@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Tobi Alagbe">
+    <meta name="HandheldFriendly" content="true">
+    <meta property="og:title" content="chatterbox">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://chatterbox.ng">
+    <meta property="og:site_name" content="chatterbox.ng">
+    <meta property="og:description" content="Listen to me chatter on and on when you have the time">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Chatterbox - Narrative Conversation web app. - Tobi Alagbe">
+    <meta name="fragment" content="!">
+    <meta name="keywords" content="chatterbox, tobi alagbe, tobi, alagbe, nigerian software developer, nigerian developer, nigerian web developer">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!--<link rel="icon" href="/img/">-->
+
+    <base href="/">
+
+    <title>Chatterbox</title>
+
+    <link href="css/mystyle.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- JS -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-route/angular-route.min.js"></script>
+    <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="vendor/ngstorage/ngStorage.min.js"></script>
+
+    <script src="js/angular-ui-router.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/service.js"></script>
+
+    <script src="js/ng-file-upload-shim.min.js"></script>
+    <script src="js/ng-file-upload.min.js"></script>
+
+    <!-- service worker register -->
+    <!-- <script src="/app.js"></script> -->
+
+
+
+
+
+</head>
+
+
+        <body ng-app="myApp" >
+
+
+
+
+
+
+
+        <div class="menu">
+            <br><br><br>
+            <ul>
+                <li><a class="x"> <img src="img/delete30.png">  </a></li> <br><br><br>
+                <li><a   class="menulink" href="#/hello"> Home  </a></li>
+                <li><a   class="menulink" href="#/me"> About  </a></li>
+            </ul>
+        </div>
+
+
+
+
+
+        <div ui-view></div>
+
+
+
+
+                <script type="text/javascript">
+
+
+
+                    $(".menulink").click(function(){
+                        $(".menu").fadeOut(200);
+
+                    });
+
+
+
+
+
+                </script>
+
+        </body>
+
+
+
+</html>

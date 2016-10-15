@@ -1,0 +1,41 @@
+{
+  "name": "chatterbax",
+  "version": "1.0.0",
+  "description": "interactive web app",
+  "main": "server.js",
+  "engines": {
+    "node": "0.12.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobiskillz/chatterbox.git"
+  },
+  "keywords": [
+    "Mean",
+    "chatterbox",
+    "tobi",
+    "alagbe",
+    "interactive"
+  ],
+  "author": "Tobi Alagbe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tobiskillz"
+  },
+  "dependencies": {
+    "async": "^1.2.1",
+    "body-parser": "^1.12.4",
+    "connect-multiparty": "^2.0.0",
+    "cors": "^2.7.1",
+    "dotenv": "^1.1.0",
+    "express": "^4.12.4",
+    "fileupload": "^1.0.0",
+    "formidable": "^1.0.17",
+    "mongoose": "^4.0.5",
+    "morgan": "^1.7.0"
+  }
+}
